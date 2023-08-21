@@ -1,0 +1,8 @@
+torch
+sentencepiece
+prettytable
+torchinfo
+nltk
+tqdm
+tarfile
+wget
