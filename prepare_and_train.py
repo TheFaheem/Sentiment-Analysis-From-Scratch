@@ -1,7 +1,7 @@
 # Importing All the Modules that we created
 import yaml # We Are Going to use yaml to parse the Arguments. Forget the Good old Arg Parser >_<
 from helpers import 
-from data_initializer import DataInitializer
+from dataset_initializer import DataInitializer
 from dataset_preparer import DatasetPreparer
 from dataset_preprocessor import DataPreprocessor
 from batch_iterator import BatchIterator
