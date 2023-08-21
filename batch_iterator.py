@@ -47,7 +47,7 @@ class BatchIterator():
         return train_batch_per_epoch, test_batch_per_epoch
 
 
-    def data_generator(self, batch_size, train=True, shuffle=True):all the examples in the training set passes through the model  
+    def data_generator(self, batch_size, train=True, shuffle=True): 
 
         """
         Yields Infinte Number batches of data for training and testing. set `train=True` for yielding training set and vice versa. if we loop through the generator to yield batches of data,
