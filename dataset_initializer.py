@@ -1,4 +1,4 @@
-class DataCreator():
+class DataInitializer():
 
     def __init__(self,
                  dataset_dir,
