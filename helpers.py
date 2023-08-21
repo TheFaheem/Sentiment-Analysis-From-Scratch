@@ -3,9 +3,9 @@ from prettytable import PrettyTable
 
 
 # Print a Comprehensive Summary of the Model, Modules, Submodules, Parameter Counts
-def model_summary(model, generator)
-review_batch, label, mask_batch = next(generator)
-print(summary(model, input_data=[review_batch.to("cuda:0"), mask_batch.to("cuda:0")]))
+def model_summary(model, generator):
+    review_batch, label, mask_batch = next(generator)
+    print(summary(model, input_data=[review_batch.to("cuda:0"), mask_batch.to("cuda:0")]))
 
 
 # Utility function to print the Modules, SubModules and their Corresponding trainable parmeters in a Clean Table Structure
