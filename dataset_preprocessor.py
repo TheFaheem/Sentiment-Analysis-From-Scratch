@@ -1,7 +1,12 @@
+# importing necessary modules
+import torch
+import os
+import sentencepiece as spm
+
 class DataPreprocessor():
 
     def __init__(self,
-                 vocab_path
+                 vocab_path,
                  ):
 
         """
@@ -40,7 +45,6 @@ class DataPreprocessor():
         """
 
         self.vocab_path = vocab_path
-
         self.vocab = self.load_vocab(self.vocab_path) # SentencePiece vocabulary
         self.EOS = self.vocab.piece_to_id('<EOS>') # Token ID to mark end-of-sentence
         self.PAD = self.vocab.piece_to_id('<PAD>') # Token ID for padding
