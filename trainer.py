@@ -111,7 +111,7 @@ class Trainer():
         print("Sucessfully Prepared Model for Training.")
         return model
 
-    def prepare_lossfn_optims(self, model, lr, wd, gm):
+    def prepare_lossfn_optims_lr_scheduler(self, model, lr, wd, gm):
 
         """
         Prepares loss function, optimizer, and learning rate scheduler.
@@ -198,7 +198,7 @@ class Trainer():
         test_acc = []
 
         print("Preparing loss fuction, optimizer and learning rate scheduler...")
-        criteration, optimizer, lr_scheduler = self.prepare_lossfn_optims(model, learning_rate, weight_decay, gamma)
+        criteration, optimizer, lr_scheduler = self.prepare_lossfn_optims_lr_scheduler(model, learning_rate, weight_decay, gamma)
         print("Initialised Sucessfully...")
 
         for epoch in range(1, num_epochs+1):
