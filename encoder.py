@@ -1,6 +1,9 @@
 # Importing Necessary Modules
 import torch
 import torch.nn as nn
+from activation import Softmax
+from embedding_layers import EmbeddingLayer, PositionalEncoding
+from transformer_block import TransformerBlock
 
 
 # class for Encoder Part of the Transformer Architecture
@@ -50,7 +53,7 @@ class Encoder(nn.Module):
         assert pooling == 'max' or pooling == 'avg' or pooling == "mean", "Sorry! No other Pooling Methods Implemented as of Now. Current Options are 'max', 'mean', 'avg'."
         self.pooling = pooling
 
-        stack_them_up = lambda block, n_block: nn.ModuleList([copy.deepcopy(block) for _ in range(n_block)])
+        stack_them_up = lambda block, n_block: nn.ModuleList([copy.deepcopy(block) for _ in range(n_block)]) # It Seems, What I Came up with for this lamda funtion name is actually concise
 
         self.transformer_blocks = stack_them_up(TransformerBlock(hidden_size=embedding_dim, activation=activation, num_heads=num_heads, dropout=dropout, expansion_factor=expansion_factor), num_blocks) # Sequentially applies the blocks of the Transformer network
 
