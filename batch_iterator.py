@@ -4,7 +4,8 @@ class BatchIterator():
                  train_x,
                  train_y,
                  test_x,
-                 test_y
+                 test_y.
+                 tokenize
                  ):
         
         """
@@ -15,6 +16,7 @@ class BatchIterator():
             train_y (list): List of corresponding sentiment labels for training data.
             test_x (list): List of testing samples.
             test_y (list): List of corresponding sentiment labels for testing data.
+            tokenize (method): Function to tokenize the samples
 
         Methods:
             calculate_batch_per_epoch(batch_size: int) -> Tuple[int, int]:
@@ -28,6 +30,7 @@ class BatchIterator():
         self.train_y = train_y
         self.test_x = test_x
         self.test_y = test_y
+        self.tokenize = tokenize
 
     def calculate_batch_per_epoch(self, batch_size):
 
