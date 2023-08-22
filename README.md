@@ -39,6 +39,8 @@ This repository is organized as follows:
 - `encoder.py`: A Class for Encoder Part of Transformer's Architecture, which encapsulate all the modules which we build for Modelling.
 - `main.py`: An Example script which encapsulate all the above Modules, Demonstrating initialization, preparation, preprocessing, training the sentiment analysis model, evaluating and performing inference on them.
 
+All the Modules used to Build Model's Architecture are adapted from My Another [Repository](https://github.com/TheFaheem/Transformers) where I Implemented a Complete Transformer Architecture from Scratch. Give it a look if you want.
+
 ## Getting Started
 
 To Get Started, follow these steps:
