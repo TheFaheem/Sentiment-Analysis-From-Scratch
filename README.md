@@ -1,9 +1,15 @@
 <h1 align="center"> Sentiment Analysis From Scratch </h1>
 
-![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+<p align="center">
+  <img alt="Python Version" src="https://img.shields.io/badge/Python-3.x-blue.svg">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
 
-This repository contains all the necessary modules from preparing, preprocessing, data generator all the way up to training, evaluating and performing inference for building a sentiment analysis model from scratch using the IMDB Movie Reviews Dataset. This model is designed to classify movie review or a sentence as either positive or negative based on their sentiment.
+<p align="center">
+  <strong>Build a Sentiment Analysis Model from Scratch using the IMDB Movie Reviews Dataset</strong>
+</p>
+
+This Repository contains all the Necessary Modules for preparing, preprocessing, data generator all the way up to training, evaluating and performing inference to build a entire Sentiment Analysis Model from scratch using the IMDB Movie Reviews Dataset. This model is designed to classify movie review or a sentence as either positive or negative based on their sentiment.
 
 ## Table of Contents
 
@@ -19,6 +25,8 @@ This repository contains all the necessary modules from preparing, preprocessing
 Sentiment analysis is the process of determining the sentiment or emotion expressed in a piece of text. This project focuses on building a sentiment analysis model without relying on pre-trained models. My Goal is to understand the step-by-step process of data preparation, preprocessing, model training, and evaluation, which is Fulfilled.
 
 ## Repository Structure
+
+This repository is organized as follows:
 
 - `dataset_initializer.py`: an Utility Class for downloading and preparing the IMDB Movie Reviews Dataset Folder.
 - `data_preparer.py`: an Utility Class for processing the dataset folder, preparing the dataset and building vocabulary.
@@ -49,9 +57,9 @@ To Get Started, follow these steps:
 
 If you want to replicate this project and train your own sentiment analysis model or If you want to modify the code used to train the model, you can modify the modules according to your need or preference and train it by, Follow these steps:
 
-- **Setup the Arguments**: Open the `config.yaml`, and set your prefered configuration for training. Now everything is ready to train your own sentiment analysis model.
+- **Setup the Arguments**: Open the `config.yaml`, and set your prefered configuration for training.
 
-- **Train**: After Setting up Everything, Fire up the training by running the following in your terminal.
+- **Train**: Fire up the training by running the following command in your terminal.
   ```shell
   python main.py
   ```
@@ -79,7 +87,7 @@ Contributions are valuable and greatly appreciated. By contributing, you help im
  
 ### Get in Touch
 
-If you have any questions or need help, feel free to reach out by opening an issue or joining the discussion in existing issues.
+Have questions or Need Assistance? Feel free to open an issue or join the discussion in existing issues.
 
 ### Guidelines
 
