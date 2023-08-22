@@ -91,7 +91,7 @@ class PositionalEncoding(nn.Module):
         self.n = n
 
         positional_encoding = torch.zeros(max_len, d_model)  # Matrix Filled with zeros of shape (max_len, embedding_dim)
-        position = torch.arange(0, max_len).unsqueeze(axis=1) # Positions/Index of the Words in a sequence
+        position = torch.arange(0, max_len).unsqueeze(1) # Positions/Index of the Words in a sequence
 
         div_term = torch.exp(torch.arange(0, d_model, 2).float() * -(torch.log(torch.tensor(self.n)) / d_model))
 
