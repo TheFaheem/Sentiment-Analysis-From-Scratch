@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Build a Sentiment Analysis Model from Scratch using the IMDB Movie Reviews Dataset</strong>
+  <strong>Building a Sentiment Analysis Model from Scratch using the IMDB Movie Reviews Dataset</strong>
 </p>
 
 This Repository contains all the Necessary Modules for preparing, preprocessing, data generator all the way up to training, evaluating and performing inference to build a entire Sentiment Analysis Model from scratch using the IMDB Movie Reviews Dataset. This model is designed to classify movie review or a sentence as either positive or negative based on their sentiment.
