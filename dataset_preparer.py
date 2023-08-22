@@ -15,7 +15,7 @@ class DatasetPreparer():
         self.dataset_folder = dataset_folder
 
     """
-    A Utility class for preparing the dataset and buliding vocabulary.
+    A Utility class for processing the dataset folder, preparing the dataset and buliding vocabulary.
 
     Args:
         dataset_folder (str): The path to the folder containing the extracted data files.
