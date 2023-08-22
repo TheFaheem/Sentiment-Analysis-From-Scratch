@@ -15,7 +15,7 @@ class DatasetPreparer():
         self.dataset_folder = dataset_folder
 
     """
-    A Utility class for preparing and preprocessing text data for sentiment analysis.
+    A Utility class for preparing the dataset and buliding vocabulary to train a sentiment analysis model.
 
     Args:
         dataset_folder (str): The path to the folder containing the extracted data files.
