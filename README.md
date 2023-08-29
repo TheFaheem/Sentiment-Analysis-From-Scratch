@@ -1,4 +1,4 @@
-<h1 align="center"> Sentiment Analysis From Scratch </h1>
+<h1 align="center"> SentiNet </h1>
 
 <p align="center">
   <img alt="Python Version" src="https://img.shields.io/badge/Python-3.x-blue.svg">
