@@ -117,28 +117,20 @@ class Prepare_Train():
         # Remove HTML tag from review.
         clean = re.compile('<.*?>')
         review_without_tag = re.sub(clean, '', sentence)
-    
         # Make Entire Sentence lowercase.
         review_lowercase = review_without_tag.lower()
-    
         # tokenize and remove Remove all the Punctuation in words.
         review_without_punctuation = [''.join(char for char in word if (char not in string.punctuation)) for word in word_tokenize(review_lowercase)]
-    
         # Filter out the Empty String
         filtered = list(filter(None, review_without_punctuation))
-    
         # combine all the words into a sentence
         cleaned_sentence = ' '.join(filtered)
-    
         # Tokenize the Cleaned input
         tokenized_sentence = tokenize(cleaned_sentence)
-    
         # Create Padding Mask
         padding_mask = [0 if t == 0 else 1 for t in tokenized_sentence]
-    
         # Convert the tokenized sentence to Tensor and add batch dimension
         tokenized_input = torch.tensor(tokenized_sentence, dtype=torch.long).unsqueeze(0)
-    
         # Convert the Padding mask into torch tensor data type and adjust the size of the tensor to match the attention size
         padding_mask = torch.tensor(padding_mask, dtype=torch.bool).unsqueeze(0).unsqueeze(0).unsqueeze(0)
     
