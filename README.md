@@ -11,6 +11,10 @@
 
 This Repository contains all the Necessary Modules for preparing, preprocessing, data generator all the way up to training, evaluating and performing inference to build a entire Sentiment Analysis Model from scratch using the IMDB Movie Reviews Dataset. This model is designed to classify movie review or a sentence as either positive or negative based on their sentiment.
 
+### Note:
+
+If You are training the model in your local machine, if you have GPUs and it's appropriate drivers are correctly installed in your system, Training will be faster according to what GPU you are using. In case if you don't have GPUs in your local machine then your model will be trained on your cpu, I recommend you to train you're model in cloud because training a model on cpu is embarrassingly slow according to your model's parameter and your cpu type. Don't Worry if you don't want to pay cloud providers to train your model unless your model's parameter count is more than 40 million, I'll Recommend you to check Google Colab (GPU: T4), Kaggle Notebook (GPU: (T4, P100)), Paperspace(GPU: k80) which is sufficient to training your model which has upto 30-40 million trainable parameters, Over 40 million parameters the training will be slower and the runtime can be disconnected anytime without notifying. That's really something to concerned about (Imagine you're runtime is disconnected in last epoch). Anyways it's up to you.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -65,10 +69,6 @@ If you want to replicate this project and train your own sentiment analysis mode
   ```shell
   python main.py
   ```
-
-### Note:
-
-If You are training the model in your local machine, if you have GPUs and it's appropriate drivers are correctly installed in your system, Training will be faster according to what GPU you are using. In case if you don't have GPUs in your local machine then your model will be trained on your cpu, I recommend you to train you're model in cloud because training a model on cpu is embarrassingly slow according to your model's parameter and your cpu type. Don't Worry if you don't want to pay cloud providers to train your model unless your model's parameter count is more than 40 million, I'll Recommend you to check Google Colab (GPU: T4), Kaggle Notebook (GPU: (T4, P100)), Paperspace(GPU: k80) which is sufficient to training your model which has upto 30-40 million trainable parameters, Over 40 million parameters the training will be slower and the runtime can be disconnected anytime without notifying. That's really something to concerned about (Imagine you're runtime is disconnected in last epoch). Anyways it's up to you.
 
 ## Contributing
 
